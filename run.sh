@@ -14,3 +14,8 @@ cmake --build build
 #```sh
 #cmake -B build
 #ln -s build/compile_commands.json
+
+
+#Editing multiple line in NVIM
+#You can use the follow commands
+#s/^/{put-something}   /

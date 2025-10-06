@@ -1,15 +1,20 @@
 #include <iostream>
+#include <optional>
 #include <cmath>
+
 #include <SFML/Graphics.hpp>
-#include <SFML/Window/VideoMode.hpp>
-#include <SFML/System/Vector2.hpp>
+
 #include <SFML/Window/Event.hpp>
 #include <SFML/Window/Keyboard.hpp>
+#include <SFML/Window/VideoMode.hpp>
+
 #include <SFML/Graphics/Drawable.hpp>
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderStates.hpp>
 #include <SFML/Graphics/RenderTarget.hpp>
+
 #include <SFML/System/Time.hpp>
 #include <SFML/System/Clock.hpp>
 #include <SFML/System/Time.hpp>
-#include <optional>
+#include <SFML/System/Angle.hpp>
+#include <SFML/System/Vector2.hpp>

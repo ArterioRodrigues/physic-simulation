@@ -2,7 +2,7 @@
  
 int main() {
     Game game;
-    game.run(60);
+    game.run(6000);
 
     return 0;
 }
