@@ -1,8 +1,6 @@
 #include "../include/game.h"
 
-Game::Game()
-    : _window(sf::VideoMode(sf::Vector2u(800, 600)), "02_Game_Archi"),
-      _player() {
+Game::Game() : _window(sf::VideoMode(sf::Vector2u(800, 600)), "02_Game_Archi"), _player() {
   sf::Vector2f position(400, 300);
   _player.setPosition(position);
 }
