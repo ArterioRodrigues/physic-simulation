@@ -37,22 +37,18 @@ void Game::processEvents() {
       sf::Keyboard::Key code = event.getIf<sf::Event::KeyPressed>()->code;
 
       if (code == sf::Keyboard::Key::Escape) {
-        std::cout << "ESCAPE KEY PRESSED" << std::endl;
         _window.close();
       }
 
       else if (code == sf::Keyboard::Key::Up) {
-        std::cout << "UP KEY PRESSED" << std::endl;
         _player.isMoving = true;
       }
 
       else if (code == sf::Keyboard::Key::Left) {
-        std::cout << "LEFT KEY PRESSED" << std::endl;
         _player.rotation = -1;
       }
 
       else if (code == sf::Keyboard::Key::Right) {
-        std::cout << "RIGHT KEY PRESSED" << std::endl;
         _player.rotation = 1;
       }
     }
@@ -60,17 +56,14 @@ void Game::processEvents() {
     else if (event.is<sf::Event::KeyReleased>()) {
       sf::Keyboard::Key code = event.getIf<sf::Event::KeyReleased>()->code;
       if (code == sf::Keyboard::Key::Up) {
-        std::cout << "UP KEY RELEASED" << std::endl;
         _player.isMoving = false;
       }
 
       else if (code == sf::Keyboard::Key::Left) {
-        std::cout << "LEFT KEY RELEASED" << std::endl;
         _player.rotation = 0;
       }
 
       else if (code == sf::Keyboard::Key::Right) {
-        std::cout << "RIGHT KEY RELEASED" << std::endl;
         _player.rotation = 0;
       }
     }

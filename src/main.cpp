@@ -1,8 +1,17 @@
+#include "../include/action.h"
 #include "../include/game.h"
- 
-int main() {
-    Game game;
-    game.run(6000);
+#include <SFML/Window/Event.hpp>
+#include <SFML/Window/Keyboard.hpp>
 
-    return 0;
+int main() {
+  // Game game;
+  // game.run(6000);
+  Action action(sf::Keyboard::Key::Up);
+  bool check = true;
+  while (true) {
+    if (action == sf::Event::KeyPressed()) {
+      std::cout << "Working" << std::endl;
+    }
+  }
+  return 0;
 }

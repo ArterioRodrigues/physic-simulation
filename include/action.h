@@ -10,10 +10,8 @@ public:
   };
   Action(const Action &other);
 
-  Action(const sf::Keyboard::Key &key,
-         int type = Type::RealTime | Type::Pressed);
-  Action(const sf::Mouse::Button &button,
-         int type = Type::RealTime | Type::Pressed);
+  Action(const sf::Keyboard::Key &key);
+  Action(const sf::Mouse::Button &button);
 
   bool test() const;
 
@@ -25,5 +23,4 @@ public:
 private:
   friend class ActionTarget;
   sf::Event _event;
-  int _type;
 };
