@@ -21,7 +21,7 @@ public:
   Action &operator=(const Action &other);
 
 private:
-  friend class ActionTarget;
+  //need to change friend class ActionTarget;
   sf::Event _event;
   int _type;
 };
